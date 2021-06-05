@@ -1,11 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import Carlist from './components/Carslist';
 
 export default function App() {
   return (
     <View style={styles.container}>
+      <Text style={styles.welcome}>Welcome to car house</Text>
       {/* <CarItem
         name={"Model X"}
         tagline={"starting from 99,500"}
@@ -26,5 +27,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  welcome: {
+    fontSize: 20,
+  }
 
 });

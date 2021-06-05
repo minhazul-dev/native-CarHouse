@@ -6,6 +6,7 @@ const CarItem = (props) => {
     const { name, tagline, taglineCTA, image } = props.car;
     return (
         <View style={styles.carContainer}>
+
             <ImageBackground style={styles.img} source={image}></ImageBackground>
 
             <View style={styles.titles}>
